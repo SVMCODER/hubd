@@ -43,7 +43,6 @@ function save() {
           </div>
         </div>
         </div>`);
-        localStorage.setItem('prono',localStorage.getItem('prono')+1)
         alert('SAVED!')
     }
 }
