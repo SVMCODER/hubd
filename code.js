@@ -42,7 +42,7 @@ function save() {
             <p class=-'pd'>Developer: ${pauthor} </p>
           </div>
         </div>
-        </div>`);
+        </div>`)
         alert('SAVED!')
     }
 }
