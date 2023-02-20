@@ -20,12 +20,12 @@ document.querySelector('#input').innerHTML = `
 `
 function save() {
     pname = document.getElementById('pname').value;
-    pcode = document.getElementById('input').value;
-    
+
+
     pauthor = localStorage.getItem('name')
     time = Date().replace('GMT+0530 (India Standard Time)','')
-    if (pname == '' || pcode == '') {
-        alert('Cannot be empty')
+    if (pname == '') {
+        console.log('error')
     }
     else {
         localStorage.setItem('projectfile',localStorage.getItem('projectfile')+`
@@ -35,7 +35,7 @@ function save() {
           <h5>${pname}</h5>
           <img src='https://img.icons8.com/emoji/600/000000/file-folder-emoji.png' alt='NO INTERNET CONNECTION' class='pimg'>
           <hr>
-          <h6 class='pcoded'>${pcode}</h6>
+          <h6 class='pp'>CONGRATULATIONS ON CREATING THIS PROJECT</h6>
           <hr><br>
           <p class='pp'>Coded on: ${time} </p>
           <div>
