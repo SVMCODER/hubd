@@ -20,7 +20,7 @@ document.querySelector('#input').innerHTML = `
 `
 function save() {
     pname = document.getElementById('pname').value;
-    pcode = document.querySelector('#input').value;
+    pcode = document.getElementById('input').value;
     
     pauthor = localStorage.getItem('name')
     time = Date().replace('GMT+0530 (India Standard Time)','')
