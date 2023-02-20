@@ -73,5 +73,20 @@ body{
 <!-- the code editor is ended here hehe the entire website is done, now i'mma show it to laxmi mam XD :D -->
 <script src="server.js"></script>
 <script src="code.js"></script>
+<script>
+function save() {
+pname = localStorage.getItem('name')
+localStorage.setItem('projectfile',localStorage.getItem('projectfile')+`<br>
+<div align="center" class="pcnt">
+<h4>${document.getElementById("pname").value}</h4>
+<hr>
+<img class="pimg" src="https://img.icons8.com/emoji/600/000000/file-folder-emoji.png">
+<hr>
+<p> CONGRATULATIONS ON CREATING A WEBSITE </p>
+<p> ${Date()} </p>
+<p class="pp"> ${pname} </p>
+</div>
+window.location.replace('projects.html')
+</script>
 </body>
 </html>
