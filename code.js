@@ -25,7 +25,7 @@ function save() {
     pauthor = localStorage.getItem('name')
     time = Date().replace('GMT+0530 (India Standard Time)','')
     if (pname == '' || pcode == '') {
-        document.getElementById('em').innerHTML = 'ERROR 404\nReasons:\n1.Inputs cannot be empty\n2.You must login\n3.You are using a 3rd party browser that contains viruses.'
+        alert('Cannot be empty')
     }
     else {
         localStorage.setItem('projectfile',localStorage.getItem('projectfile')+`
@@ -43,6 +43,6 @@ function save() {
           </div>
         </div>
         </div>`)
-        alert('SAVED!')
+        window.location.replace('projects.html')
     }
 }
