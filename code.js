@@ -24,10 +24,10 @@ function save() {
 
     pauthor = localStorage.getItem('name')
     time = Date().replace('GMT+0530 (India Standard Time)','')
-    if (pname == '') {
-        console.log('error')
-    }
-    else {
+  
+       
+
+
         localStorage.setItem('projectfile',localStorage.getItem('projectfile')+`
         <br>
         <div align='center'>
@@ -42,7 +42,7 @@ function save() {
             <p class=-'pd'>Developer: ${pauthor} </p>
           </div>
         </div>
-        </div>`)
+        </div>`);
         alert('SAVED!')
-    }
+    
 }
